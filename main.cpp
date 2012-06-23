@@ -127,9 +127,9 @@ int main()
 	
 	
 	//Load Images
-	IplImage* desimage = cvLoadImage("/Users/arminvoit/Documents/OpenCV/Untitled/jomarkers.jpg");
+	IplImage* desimage = cvLoadImage("jomarkers.jpg");
 	
-	IplImage* srcimage = cvLoadImage("/Users/arminvoit/Documents/OpenCV/Untitled/src.jpg");
+	IplImage* srcimage = cvLoadImage("src.jpg");
 			
 	
     // Couldn't get a image? Throw an error and quit
