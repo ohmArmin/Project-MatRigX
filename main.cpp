@@ -35,7 +35,7 @@ IplImage* GetThresholdedImageGreen(IplImage* img)
 	
 	IplImage* imgThreshed = cvCreateImage(cvGetSize(img), 8, 1);
 	
-	cvInRangeS(imgHSV, cvScalar(50, 100, 100), cvScalar(70, 255, 255), imgThreshed);
+	cvInRangeS(imgHSV, cvScalar(40, 80, 80), cvScalar(80, 255, 255), imgThreshed);
 	
 	//erode and dilate imgTreshed
 	cvErode(imgThreshed , imgThreshed, NULL, 1);
@@ -89,12 +89,45 @@ IplImage* GetThresholdedImageRed(IplImage* img)
 }
 
 int main()
-{
+{	
+	//Initialize Iteration counter (=number of images to be compared)
 	int counter = 3;
+	
+	// initialize images for thresholded images (Marker = white, rest = black)
+	IplImage* imgYellowThreshDes;
+	IplImage* imgBlueThreshDes; 
+	IplImage* imgRedThreshDes; 
+	IplImage* imgGreenThreshDes; 
+	
+	IplImage* imgYellowThreshSrc;
+	IplImage* imgBlueThreshSrc; 
+	IplImage* imgRedThreshSrc; 
+	IplImage* imgGreenThreshSrc; 
+	
+	//initialize moments for calculating moments of threshImages
+	CvMoments *momentsyellowdes;
+	CvMoments *momentsbluedes; 
+	CvMoments *momentsreddes; 
+	CvMoments *momentsgreendes; 
+	
+	CvMoments *momentsyellowsrc; 
+	CvMoments *momentsbluesrc; 
+	CvMoments *momentsredsrc; 
+	CvMoments *momentsgreensrc; 
+	
+	momentsyellowdes = (CvMoments*)malloc(sizeof(CvMoments));
+	momentsbluedes = (CvMoments*)malloc(sizeof(CvMoments));
+	momentsreddes = (CvMoments*)malloc(sizeof(CvMoments));
+	momentsgreendes = (CvMoments*)malloc(sizeof(CvMoments));
+	
+	momentsyellowsrc = (CvMoments*)malloc(sizeof(CvMoments));
+	momentsbluesrc = (CvMoments*)malloc(sizeof(CvMoments));
+	momentsredsrc = (CvMoments*)malloc(sizeof(CvMoments));
+	momentsgreensrc = (CvMoments*)malloc(sizeof(CvMoments));
 	
 	//define Image array and load calibration images
 	
-	IplImage* images[2];
+	IplImage* images[7];
 	
 	for (int i=1; i<=counter; i++) {
 		
@@ -126,10 +159,11 @@ int main()
 	
 	
 	
-	//Load Images
-	IplImage* desimage = cvLoadImage("jomarkers.jpg");
+	//Load destination Image and define srcimage
+	IplImage* desimage = cvLoadImage("./MarkerPics/des.jpg");
 	
-	IplImage* srcimage = cvLoadImage("src.jpg");
+	IplImage* srcimage;
+	
 			
 	
     // Couldn't get a image? Throw an error and quit
@@ -139,42 +173,39 @@ int main()
         return -1;
     }
 		
-	if(!srcimage)
-	{
-		printf("Could not initialize srcimage...\n");
-		return -1;
-	}
-
-    // The two windows we'll be using
-    cvNamedWindow("Image");
-    cvNamedWindow("yellowMarker");
-	cvNamedWindow("blueMarker");
-	cvNamedWindow("redMarker");
-	cvNamedWindow("greenMarker");
 	
 
+	for (int i =1; i<=counter; i++) {
+
+		// The two windows we'll be using
+		/*cvNamedWindow("Image");
+		cvNamedWindow("yellowMarker");
+		cvNamedWindow("blueMarker");
+		cvNamedWindow("redMarker");
+		cvNamedWindow("greenMarker");*/
+		
+		//Load Images for mapping
+		srcimage = images[i];
+		
+		// Couldn't get a image? Throw an error and quit
+		if(!srcimage)
+		{
+			printf("Could not initialize srcimage...\n");
+			return -1;
+		}
 
 		// Holds the thresholded images (Marker = white, rest = black)
-        IplImage* imgYellowThreshDes = GetThresholdedImageYellow(desimage);
-		IplImage* imgBlueThreshDes = GetThresholdedImageBlue(desimage);
-		IplImage* imgRedThreshDes = GetThresholdedImageRed(desimage);
-		IplImage* imgGreenThreshDes = GetThresholdedImageGreen(desimage);
+        imgYellowThreshDes = GetThresholdedImageYellow(desimage);
+		imgBlueThreshDes = GetThresholdedImageBlue(desimage);
+		imgRedThreshDes = GetThresholdedImageRed(desimage);
+		imgGreenThreshDes = GetThresholdedImageGreen(desimage);
 		
-		IplImage* imgYellowThreshSrc = GetThresholdedImageYellow(srcimage);
-		IplImage* imgBlueThreshSrc = GetThresholdedImageBlue(srcimage);
-		IplImage* imgRedThreshSrc = GetThresholdedImageRed(srcimage);
-		IplImage* imgGreenThreshSrc = GetThresholdedImageGreen(srcimage);
+		imgYellowThreshSrc = GetThresholdedImageYellow(srcimage);
+		imgBlueThreshSrc = GetThresholdedImageBlue(srcimage);
+		imgRedThreshSrc = GetThresholdedImageRed(srcimage);
+		imgGreenThreshSrc = GetThresholdedImageGreen(srcimage); 
 
 		// Calculate the moments to estimate the position of the markers
-        CvMoments *momentsyellowdes = (CvMoments*)malloc(sizeof(CvMoments));
-		CvMoments *momentsbluedes = (CvMoments*)malloc(sizeof(CvMoments));
-		CvMoments *momentsreddes = (CvMoments*)malloc(sizeof(CvMoments));
-		CvMoments *momentsgreendes = (CvMoments*)malloc(sizeof(CvMoments));
-		
-		CvMoments *momentsyellowsrc = (CvMoments*)malloc(sizeof(CvMoments));
-		CvMoments *momentsbluesrc = (CvMoments*)malloc(sizeof(CvMoments));
-		CvMoments *momentsredsrc = (CvMoments*)malloc(sizeof(CvMoments));
-		CvMoments *momentsgreensrc = (CvMoments*)malloc(sizeof(CvMoments));
 	
         cvMoments(imgYellowThreshDes, momentsyellowdes, 1);
 		cvMoments(imgBlueThreshDes, momentsbluedes, 1);
@@ -290,7 +321,7 @@ int main()
 	
 	
 		// generate map_Matrix
-		cvGetPerspectiveTransform(srcPoints, desPoints, map_matrix1[1]);
+		cvGetPerspectiveTransform(srcPoints, desPoints, map_matrix1[i]);
 		//cvGetAffineTransform(srcPoints, desPoints, map_matrix);
 	
 		// Print it out for debugging purposes
@@ -303,6 +334,8 @@ int main()
 		printf("position blue Source (%f,%f)\n", posXblueSrc, posYblueSrc);
 		printf("position red Source (%f,%f)\n", posXredSrc, posYredSrc);
 		printf("position green Source (%f,%f)\n", posXgreenSrc, posYgreenSrc);
+		
+		printf("Iteration: %d\n",i);
 
 	
 		//Map source to destination pic
@@ -311,50 +344,50 @@ int main()
 		
 
 		//View Image and Threshs
-        cvShowImage("yellowMarker", imgYellowThreshDes);
+        /*cvShowImage("yellowMarker", imgYellowThreshDes);
 		cvShowImage("blueMarker", imgBlueThreshDes);
 		cvShowImage("redMarker", imgRedThreshDes);
 		cvShowImage("greenMarker", imgGreenThreshDes);
-		cvShowImage("Image", desimage);
-
+		cvShowImage("Image", desimage);*/
+	}
+	
+	
 	// Wait for a keypress to exit application
 	while( 1 ) {
 		if( cvWaitKey( 100 ) == 27 ) break;
 	}	// Wait for a keypress to exit application
-
+	
+	
+	
+	
+		// Release the thresholded image+moments to prevent memory leaks
+		cvReleaseImage(&imgYellowThreshDes);
+		cvReleaseImage(&imgBlueThreshDes);
+		cvReleaseImage(&imgRedThreshDes);
+		cvReleaseImage(&imgGreenThreshDes);
+		cvReleaseImage(&imgYellowThreshSrc);
+		cvReleaseImage(&imgBlueThreshSrc);
+		cvReleaseImage(&imgRedThreshSrc);
+		cvReleaseImage(&imgGreenThreshSrc);
+	
+		/*cvDestroyWindow( "yellowMarker" ); 
+		cvDestroyWindow( "blueMarker" ); 
+		cvDestroyWindow( "redMarker" ); 
+		cvDestroyWindow( "greenMarker" ); 
+		cvDestroyWindow( "Image" ); */
+	
+		delete momentsyellowdes;
+		delete momentsbluedes;
+		delete momentsreddes;
+		delete momentsgreendes;
+		delete momentsyellowsrc;
+		delete momentsbluesrc;
+		delete momentsredsrc;
+		delete momentsgreensrc;
+	
 		
-	
-	// Release the thresholded image+moments to prevent memory leaks
-	cvReleaseImage(&imgYellowThreshDes);
-	cvReleaseImage(&imgBlueThreshDes);
-	cvReleaseImage(&imgRedThreshDes);
-	cvReleaseImage(&imgGreenThreshDes);
-	cvReleaseImage(&imgYellowThreshSrc);
-	cvReleaseImage(&imgBlueThreshSrc);
-	cvReleaseImage(&imgRedThreshSrc);
-	cvReleaseImage(&imgGreenThreshSrc);
-	
-	//cvReleaseImage(&images[2]);
-	//cvReleaseImage(&images[1]);
-	
-	cvDestroyWindow( "yellowMarker" ); 
-	cvDestroyWindow( "blueMarker" ); 
-	cvDestroyWindow( "redMarker" ); 
-	cvDestroyWindow( "greenMarker" ); 
-	cvDestroyWindow( "Image" ); 
-	
-	delete momentsyellowdes;
-	delete momentsbluedes;
-	delete momentsreddes;
-	delete momentsgreendes;
-	delete momentsyellowsrc;
-	delete momentsbluesrc;
-	delete momentsredsrc;
-	delete momentsgreensrc;
-	
-	
+		
 
-	
 	
 	
     return 0;
