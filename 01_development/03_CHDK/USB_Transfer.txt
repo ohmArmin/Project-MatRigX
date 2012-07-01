@@ -1,0 +1,41 @@
+@title USB upload
+@param a Upload time
+@default a 60000
+@param b Delay
+@default b 2000
+]]
+ 
+-- autostart disconnect USB
+post_levent_to_ui("DisconnectUSBCable") 
+ 
+print("switch record mode")
+sleep(b)
+set_record(1)
+sleep(b)
+print("shoot")
+sleep(b)
+shoot()
+sleep(b)
+ 
+print("switch play mode")
+sleep(b)
+set_record(0)
+sleep(b)
+console_redraw()
+print("connect USB cable")
+sleep(b)
+ 
+-- connect USB
+post_levent_to_ui("ConnectUSBCable")
+-- delay for picture transfer
+sleep(a)
+-- disconnect USB
+post_levent_to_ui("DisconnectUSBCable")
+sleep(b)
+ 
+console_redraw()
+print("disconnect USB cable")
+print("shutdown cam")
+sleep(b)
+shut_down()
+sleep(3000)

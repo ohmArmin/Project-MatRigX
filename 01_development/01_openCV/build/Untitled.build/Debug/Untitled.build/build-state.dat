@@ -1,0 +1,459 @@
+TUntitled
+v7
+r0
+t362854006.495310
+cCheck dependencies
+cCompileC build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o /Users/arminvoit/Documents/Repository/Untitled/main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cLd /Users/arminvoit/Documents/Repository/Untitled/build/Debug/Untitled normal i386
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004FBBA3F400000000000000EE
+t1337697268
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/NEU/cv.h
+c000000004FA174E4000000000000D57E
+t1335981284
+s54654
+
+N/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/NEU/highgui.h
+c000000004FA174E40000000000003E62
+t1335981284
+s15970
+
+N/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/OpenCV
+c000000004FA174E4000000000063B864
+t1335981284
+s6535268
+
+N/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/Versions/A/Headers/cv.h
+c000000004FA174E4000000000000D57E
+t1335981284
+s54654
+
+N/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/Versions/A/Headers/highgui.h
+c000000004FA174E40000000000003E62
+t1335981284
+s15970
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004BBD2CE90000000000004174
+t1270689001
+s16756
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdlib.h
+c000000004BBD2CE90000000000002DF5
+t1270689001
+s11765
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/string.h
+c000000004BBD2CE90000000000001731
+t1270689001
+s5937
+
+N/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/Untitled
+t1339427339
+s14720
+
+N/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/Untitled.LinkFileList
+c000000004FD339280000000000000070
+t1339242792
+s112
+
+N/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o
+t1339427339
+s12528
+
+N/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/Untitled.LinkFileList
+c000000004FBFA2EA0000000000000072
+t1337959146
+s114
+
+N/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.ii
+t2
+s0
+
+N/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o
+t1338905297
+s8936
+
+N/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/untitled.o
+t2
+s0
+
+N/Users/arminvoit/Documents/OpenCV/Untitled/main.c
+c000000004FBFA2EA00000000000002CA
+t1337959146
+s714
+i<stdlib.h>
+i<stdio.h>
+i<math.h>
+i<gsl/gsl_errno.h>
+i<gsl/gsl_spline.h>
+
+N/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp
+c000000004FD60A0B00000000000014FC
+t1339427339
+s5372
+i"cv.h"
+i"highgui.h"
+i"stdio.h"
+i"math.h"
+
+N/Users/arminvoit/Documents/OpenCV/Untitled/untitled.c
+c000000004FBFA3D700000000000000A3
+t1337959383
+s163
+i"untitled.h"
+
+N/Users/arminvoit/Documents/OpenCV/Untitled/untitled.h
+c000000004FBFA3D7000000000000008C
+t1337959383
+s140
+
+N/Users/arminvoit/Documents/Repository/Untitled/build/Debug/Untitled
+t1341161206
+s19436
+
+N/Users/arminvoit/Documents/Repository/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/Untitled.LinkFileList
+c000000004FF07EF10000000000000074
+t1341161201
+s116
+
+N/Users/arminvoit/Documents/Repository/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o
+t1340978509
+s18688
+
+N/Users/arminvoit/Documents/Repository/Untitled/main.cpp
+c000000004FEDB5480000000000002DBB
+t1340978504
+s11707
+i"cv.h"
+i"highgui.h"
+i"math.h"
+i<stdlib.h>
+i<stdio.h>
+i<string.h>
+
+N/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Debug/Untitled
+t1339237829
+s14852
+
+N/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/Untitled.LinkFileList
+c000000004FD32527000000000000007C
+t1339237671
+s124
+
+N/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o
+t1339237829
+s9828
+
+N/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/main.cpp
+c000000004FD325C50000000000000D12
+t1339237829
+s3346
+i"cv.h"
+i"highgui.h"
+i"stdio.h"
+
+N/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Debug/Untitled
+t1340978510
+s19472
+
+N/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/Untitled.LinkFileList
+c000000004FD60AFF0000000000000097
+t1339427583
+s151
+
+N/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o
+t1340978509
+s18688
+
+N/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/main.cpp
+c000000004FEDB5480000000000002DBB
+t1340978504
+s11707
+i"cv.h"
+i"highgui.h"
+i"math.h"
+i<stdlib.h>
+i<stdio.h>
+i<string.h>
+
+N/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Debug/Untitled
+t1339427509
+s14748
+
+N/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/Untitled.LinkFileList
+c000000004FD60AB4000000000000007E
+t1339427508
+s126
+
+N/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o
+t1339427508
+s12592
+
+N/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/Untitled.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/main.cpp
+c000000004FD60AB40000000000001523
+t1339427508
+s5411
+i"cv.h"
+i"highgui.h"
+i"stdio.h"
+i"math.h"
+
+C<C0003:'CompileC main.o':P8:W0>
+s360437272.986318
+e360437273.007109
+r0
+xCompileC
+xbuild/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o
+x/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp:1:16: error: cv.h: No such file or directory
+o/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp:2:21: error: highgui.h: No such file or directory
+lSLF07#2@59"Compile /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp360437272#360437273#0(199"/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp:1:16: error: cv.h: No such file or directory/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp:2:21: error: highgui.h: No such file or directory2(4@31"Cv.h: No such file or directory360437273#0#97#0(6@51"/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp360436052#1#0#1#0#28"*: No such file or directory0(4@36"Highgui.h: No such file or directory360437273#97#102#0(6@51"/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp360436052#2#0#2#0#28"*: No such file or directory0(0#0#51"/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp3917909816998063104#1371"    cd /Users/arminvoit/Documents/OpenCV/Untitled    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-generated-files.hmap -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-own-target-headers.hmap -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-all-target-headers.hmap -iquote /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-project-headers.hmap -F/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/include -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources/x86_64 -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources -fpch-preprocess -E /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp -o /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.ii1#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies362854001#362854001#0(0"0(0#1#0"3343187568374212096#0"0#
+
+CCompileC build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o "/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/main.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s360930629.555792
+e360930629.797092
+r1
+xCompileC
+xbuild/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o
+x/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/main.cpp360930629#360930629#0(0"0(0#0#63"/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/main.cpp8606838912#1662"    cd "/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-generated-files.hmap" "-I/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-own-target-headers.hmap" "-I/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-all-target-headers.hmap" -iquote "/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-project-headers.hmap" "-F/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Debug" "-I/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Debug/include" -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/Versions/A/Headers -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/NEU "-I/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources/i386" "-I/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources" -c "/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/main.cpp" -o "/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o"0#
+
+CCompileC build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o "/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/main.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s362671309.505212
+e362671309.783613
+r1
+xCompileC
+xbuild/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o
+x/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@98"Compile /Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/main.cpp362671309#362671309#0(0"0(0#0#90"/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/main.cpp8605461440#1929"    cd "/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-generated-files.hmap" "-I/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-own-target-headers.hmap" "-I/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-all-target-headers.hmap" -iquote "/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-project-headers.hmap" "-F/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Debug" "-I/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Debug/include" -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/Versions/A/Headers -I/Library/Frameworks/OpenCV.framework/NEU "-I/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources/i386" "-I/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources" -c "/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/main.cpp" -o "/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o"0#
+
+CCompileC build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o "/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/main.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s361120308.642286
+e361120308.971319
+r1
+xCompileC
+xbuild/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o
+x/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/main.cpp: In function 'int main()':
+o/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/main.cpp:60: warning: unused variable 'map_matrix'
+lSLF07#2@73"Compile /Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/main.cpp361120308#361120308#0(201"/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/main.cpp: In function 'int main()':/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/main.cpp:60: warning: unused variable 'map_matrix'1(22@28"Unused variable 'map_matrix'361120308#93#108#0(6@65"/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/main.cpp361120308#60#0#60#0#19"unused variable '*'0(0#0#65"/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/main.cpp8613127968#1654"    cd "/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-generated-files.hmap" "-I/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-own-target-headers.hmap" "-I/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-all-target-headers.hmap" -iquote "/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-project-headers.hmap" "-F/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Debug" "-I/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Debug/include" -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/Versions/A/Headers -I/Library/Frameworks/OpenCV.framework/NEU "-I/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources/i386" "-I/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources" -c "/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/main.cpp" -o "/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o"0#
+
+CCompileC build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s361120139.497099
+e361120139.598796
+r1
+xCompileC
+xbuild/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o
+x/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp361120139#361120139#0(173"/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp: In function 'int main()':/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp:60: warning: unused variable 'map_matrix'1(22@28"Unused variable 'map_matrix'361120139#79#94#0(6@51"/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp361120139#60#0#60#0#19"unused variable '*'0(0#0#51"/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp8616393344#1508"    cd /Users/arminvoit/Documents/OpenCV/Untitled    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-generated-files.hmap -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-own-target-headers.hmap -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-all-target-headers.hmap -iquote /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-project-headers.hmap -F/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/include -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/Versions/A/Headers -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/NEU -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources/i386 -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources -c /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp -o /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o0#
+
+CCompileC build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/main.o /Users/arminvoit/Documents/Repository/Untitled/main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o "/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/main.cpp" normal x86_64 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o /Users/arminvoit/Documents/OpenCV/Untitled/main.c normal x86_64 c com.apple.compilers.gcc.4_2
+s359651946.205854
+e359651946.258000
+r0
+xCompileC
+xbuild/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o
+x/Users/arminvoit/Documents/OpenCV/Untitled/main.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#359651946#0(1761"/Users/arminvoit/Documents/OpenCV/Untitled/main.c:4:27: error: gsl/gsl_errno.h: No such file or directory/Users/arminvoit/Documents/OpenCV/Untitled/main.c:5:28: error: gsl/gsl_spline.h: No such file or directory/Users/arminvoit/Documents/OpenCV/Untitled/main.c: In function 'main':/Users/arminvoit/Documents/OpenCV/Untitled/main.c:25: error: 'gsl_interp_accel' undeclared (first use in this function)/Users/arminvoit/Documents/OpenCV/Untitled/main.c:25: error: (Each undeclared identifier is reported only once/Users/arminvoit/Documents/OpenCV/Untitled/main.c:25: error: for each function it appears in.)/Users/arminvoit/Documents/OpenCV/Untitled/main.c:25: error: 'acc' undeclared (first use in this function)/Users/arminvoit/Documents/OpenCV/Untitled/main.c:26: warning: implicit declaration of function 'gsl_interp_accel_alloc'/Users/arminvoit/Documents/OpenCV/Untitled/main.c:27: error: 'gsl_spline' undeclared (first use in this function)/Users/arminvoit/Documents/OpenCV/Untitled/main.c:27: error: 'spline' undeclared (first use in this function)/Users/arminvoit/Documents/OpenCV/Untitled/main.c:28: warning: implicit declaration of function 'gsl_spline_alloc'/Users/arminvoit/Documents/OpenCV/Untitled/main.c:28: error: 'gsl_interp_cspline' undeclared (first use in this function)/Users/arminvoit/Documents/OpenCV/Untitled/main.c:30: warning: implicit declaration of function 'gsl_spline_init'/Users/arminvoit/Documents/OpenCV/Untitled/main.c:34: warning: implicit declaration of function 'gsl_spline_eval'/Users/arminvoit/Documents/OpenCV/Untitled/main.c:37: warning: implicit declaration of function 'gsl_spline_free'/Users/arminvoit/Documents/OpenCV/Untitled/main.c:38: warning: implicit declaration of function 'gsl_interp_accel_free'13(4@42"Gsl/gsl_errno.h: No such file or directory359651946#0#106#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#4#0#4#0#28"*: No such file or directory0(4@43"Gsl/gsl_spline.h: No such file or directory359651946#106#107#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#5#0#5#0#28"*: No such file or directory0(4@58"'gsl_interp_accel' undeclared (first use in this function)359651946#284#120#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#25#0#25#0#43"'*' undeclared (first use in this function)0(4@45"'acc' undeclared (first use in this function)359651946#610#107#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#25#0#25#0#43"'*' undeclared (first use in this function)0(22@57"Implicit declaration of function 'gsl_interp_accel_alloc'359651946#717#121#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#26#0#26#0#36"implicit declaration of function '*'0(4@52"'gsl_spline' undeclared (first use in this function)359651946#838#114#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#27#0#27#0#43"'*' undeclared (first use in this function)0(4@48"'spline' undeclared (first use in this function)359651946#952#110#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#27#0#27#0#43"'*' undeclared (first use in this function)0(22@51"Implicit declaration of function 'gsl_spline_alloc'359651946#1062#115#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#28#0#28#0#36"implicit declaration of function '*'0(4@60"'gsl_interp_cspline' undeclared (first use in this function)359651946#1177#122#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#28#0#28#0#43"'*' undeclared (first use in this function)0(22@50"Implicit declaration of function 'gsl_spline_init'359651946#1299#114#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#30#0#30#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'gsl_spline_eval'359651946#1413#114#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#34#0#34#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'gsl_spline_free'359651946#1527#114#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#37#0#37#0#36"implicit declaration of function '*'0(22@56"Implicit declaration of function 'gsl_interp_accel_free'359651946#1641#120#0(6@49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c359651946#38#0#38#0#36"implicit declaration of function '*'0(0#0#49"/Users/arminvoit/Documents/OpenCV/Untitled/main.c3917909816998063104#1332"    cd /Users/arminvoit/Documents/OpenCV/Untitled    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-generated-files.hmap -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-own-target-headers.hmap -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-all-target-headers.hmap -iquote /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-project-headers.hmap -F/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/include -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources/x86_64 -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources -c /Users/arminvoit/Documents/OpenCV/Untitled/main.c -o /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o1#
+
+CCompileC build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_0
+s360574531.269307
+e360574531.745006
+r1
+xCompileC
+xbuild/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o
+x/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_0
+lSLF07#2@59"Compile /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp360574531#360574531#0(0"0(0#0#51"/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp8610439584#1514"    cd /Users/arminvoit/Documents/OpenCV/Untitled    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-generated-files.hmap -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-own-target-headers.hmap -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-all-target-headers.hmap -iquote /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-project-headers.hmap -F/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/include -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/Versions/A/Headers -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/NEU -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources/x86_64 -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources -c /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp -o /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o0#
+
+CCompileC build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s360598096.915196
+e360598097.223342
+r1
+xCompileC
+xbuild/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o
+x/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp360598096#360598097#0(0"0(0#0#51"/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp8609708320#1514"    cd /Users/arminvoit/Documents/OpenCV/Untitled    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-generated-files.hmap -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-own-target-headers.hmap -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-all-target-headers.hmap -iquote /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-project-headers.hmap -F/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/include -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/Versions/A/Headers -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/NEU -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources/x86_64 -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources -c /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp -o /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o0#
+
+CCompileC build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+s360574560.136927
+e360574560.545549
+r1
+xCompileC
+xbuild/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o
+x/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@59"Compile /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp360574560#360574560#0(0"0(0#0#51"/Users/arminvoit/Documents/OpenCV/Untitled/main.cpp8610534592#1519"    cd /Users/arminvoit/Documents/OpenCV/Untitled    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-generated-files.hmap -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-own-target-headers.hmap -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-all-target-headers.hmap -iquote /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Untitled-project-headers.hmap -F/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/include -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/Versions/A/Headers -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenCV.framework/NEU -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources/x86_64 -I/Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/DerivedSources -c /Users/arminvoit/Documents/OpenCV/Untitled/main.cpp -o /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/main.o0#
+
+CCompileC build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/untitled.o /Users/arminvoit/Documents/OpenCV/Untitled/untitled.c normal x86_64 c com.apple.compilers.gcc.4_2
+r0
+
+CLd "/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Debug/Untitled" normal i386
+s360930629.797185
+e360930629.868602
+r1
+xLd
+x/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Debug/Untitled
+xnormal
+xi386
+lSLF07#2@80"Link /Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Debug/Untitled360930629#360930629#0(0"0(0#0#0"8604725024#606"    cd "/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Debug" "-F/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Debug" -filelist "/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/Untitled.LinkFileList" -mmacosx-version-min=10.6 -framework OpenCV -o "/Users/arminvoit/Dropbox/projekt matrigx/Code/Untitled/build/Debug/Untitled"0#
+
+CLd "/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Debug/Untitled" normal i386
+s362671309.783703
+e362671310.032118
+r1
+xLd
+x/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Debug/Untitled
+xnormal
+xi386
+lSLF07#2@107"Link /Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Debug/Untitled362671309#362671310#0(0"0(0#0#0"8605600640#741"    cd "/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Debug" "-F/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Debug" -filelist "/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/Untitled.LinkFileList" -mmacosx-version-min=10.6 -framework OpenCV -o "/Users/johanneskiesel/Documents/Ohm Hochschule/SS 12/Projekt/Calibration/Untitled/build/Debug/Untitled"0#
+
+CLd "/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Debug/Untitled" normal i386
+s361120308.971412
+e361120309.173786
+r1
+xLd
+x/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Debug/Untitled
+xnormal
+xi386
+lSLF07#2@82"Link /Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Debug/Untitled361120308#361120309#0(0"0(0#0#0"8613293504#616"    cd "/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Debug" "-F/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Debug" -filelist "/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/Untitled.LinkFileList" -mmacosx-version-min=10.6 -framework OpenCV -o "/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Debug/Untitled"0#
+
+CLd "/Users/johanneskiesel/Dropbox/bme6 projekt/Code/Untitled/build/Debug/Untitled" normal x86_64
+r0
+
+CLd /Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/Untitled normal i386
+s361120139.598869
+e361120139.664177
+r1
+xLd
+x/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/Untitled
+xnormal
+xi386
+lSLF07#2@68"Link /Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/Untitled361120139#361120139#0(0"0(0#0#0"8616444672#536"    cd /Users/arminvoit/Documents/OpenCV/Untitled    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug -F/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug -filelist /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/Untitled.LinkFileList -mmacosx-version-min=10.6 -framework OpenCV -o /Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/Untitled0#
+
+CLd /Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/Untitled normal x86_64
+s360608269.608921
+e360608270.123160
+r0
+xLd
+x/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/Untitled
+xnormal
+xx86_64
+old: warning: in /Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks//OpenCV.framework/OpenCV, missing required architecture x86_64 in file
+oUndefined symbols:
+o  "_cvMoments", referenced from:
+o      _main in main.o
+o  "_cvCreateCameraCapture", referenced from:
+o      _main in main.o
+o  "_cvLine", referenced from:
+o      _main in main.o
+o  "_cvCvtColor", referenced from:
+o      GetThresholdedImage(_IplImage*)     in main.o
+o  "_cvInRangeS", referenced from:
+o      GetThresholdedImage(_IplImage*)     in main.o
+o  "_cvNamedWindow", referenced from:
+o      _main in main.o
+o      _main in main.o
+o  "_cvGetCentralMoment", referenced from:
+o      _main in main.o
+o  "_cvCreateImage", referenced from:
+o      GetThresholdedImage(_IplImage*)     in main.o
+o      GetThresholdedImage(_IplImage*)     in main.o
+o      _main in main.o
+o  "_cvReleaseImage", referenced from:
+o      GetThresholdedImage(_IplImage*)     in main.o
+o      _main in main.o
+o  "_cvShowImage", referenced from:
+o      _main in main.o
+o      _main in main.o
+o  "_cvQueryFrame", referenced from:
+o      _main in main.o
+o  "_cvAdd", referenced from:
+o      _main in main.o
+o  "_cvReleaseCapture", referenced from:
+o      _main in main.o
+o  "_cvWaitKey", referenced from:
+o      _main in main.o
+o  "_cvGetSize", referenced from:
+o      GetThresholdedImage(_IplImage*)     in main.o
+o      GetThresholdedImage(_IplImage*)     in main.o
+o      _main in main.o
+o  "_cvGetSpatialMoment", referenced from:
+o      _main in main.o
+o      _main in main.o
+old: symbol(s) not found
+ocollect2: ld returned 1 exit status
+lSLF07#2@68"Link /Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/Untitled360608269#360608270#0(1532"ld: warning: in /Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks//OpenCV.framework/OpenCV, missing required architecture x86_64 in fileUndefined symbols:  "_cvMoments", referenced from:      _main in main.o  "_cvCreateCameraCapture", referenced from:      _main in main.o  "_cvLine", referenced from:      _main in main.o  "_cvCvtColor", referenced from:      GetThresholdedImage(_IplImage*)     in main.o  "_cvInRangeS", referenced from:      GetThresholdedImage(_IplImage*)     in main.o  "_cvNamedWindow", referenced from:      _main in main.o      _main in main.o  "_cvGetCentralMoment", referenced from:      _main in main.o  "_cvCreateImage", referenced from:      GetThresholdedImage(_IplImage*)     in main.o      GetThresholdedImage(_IplImage*)     in main.o      _main in main.o  "_cvReleaseImage", referenced from:      GetThresholdedImage(_IplImage*)     in main.o      _main in main.o  "_cvShowImage", referenced from:      _main in main.o      _main in main.o  "_cvQueryFrame", referenced from:      _main in main.o  "_cvAdd", referenced from:      _main in main.o  "_cvReleaseCapture", referenced from:      _main in main.o  "_cvWaitKey", referenced from:      _main in main.o  "_cvGetSize", referenced from:      GetThresholdedImage(_IplImage*)     in main.o      GetThresholdedImage(_IplImage*)     in main.o      _main in main.o  "_cvGetSpatialMoment", referenced from:      _main in main.o      _main in main.old: symbol(s) not foundcollect2: ld returned 1 exit status43(22@123"In /Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks//OpenCV.framework/OpenCV, missing required architecture x86_64 in file360608270#0#137#0(6@0"360608270#0#0#0#0#0"0(4@30""_cvMoments", referenced from:360608270#156#33#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#189#22#0(6@0"360608270#0#0#0#0#0"0(4@42""_cvCreateCameraCapture", referenced from:360608270#211#45#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#256#22#0(6@0"360608270#0#0#0#0#0"0(4@27""_cvLine", referenced from:360608270#278#30#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#308#22#0(6@0"360608270#0#0#0#0#0"0(4@31""_cvCvtColor", referenced from:360608270#330#34#0(6@0"360608270#0#0#0#0#0"0(13@45"GetThresholdedImage(_IplImage*)     in main.o360608270#364#52#0(6@0"360608270#0#0#0#0#0"0(4@31""_cvInRangeS", referenced from:360608270#416#34#0(6@0"360608270#0#0#0#0#0"0(13@45"GetThresholdedImage(_IplImage*)     in main.o360608270#450#52#0(6@0"360608270#0#0#0#0#0"0(4@34""_cvNamedWindow", referenced from:360608270#502#37#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#539#22#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#561#22#0(6@0"360608270#0#0#0#0#0"0(4@39""_cvGetCentralMoment", referenced from:360608270#583#42#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#625#22#0(6@0"360608270#0#0#0#0#0"0(4@34""_cvCreateImage", referenced from:360608270#647#37#0(6@0"360608270#0#0#0#0#0"0(13@45"GetThresholdedImage(_IplImage*)     in main.o360608270#684#52#0(6@0"360608270#0#0#0#0#0"0(13@45"GetThresholdedImage(_IplImage*)     in main.o360608270#736#52#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#788#22#0(6@0"360608270#0#0#0#0#0"0(4@35""_cvReleaseImage", referenced from:360608270#810#38#0(6@0"360608270#0#0#0#0#0"0(13@45"GetThresholdedImage(_IplImage*)     in main.o360608270#848#52#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#900#22#0(6@0"360608270#0#0#0#0#0"0(4@32""_cvShowImage", referenced from:360608270#922#35#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#957#22#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#979#22#0(6@0"360608270#0#0#0#0#0"0(4@33""_cvQueryFrame", referenced from:360608270#1001#36#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#1037#22#0(6@0"360608270#0#0#0#0#0"0(4@26""_cvAdd", referenced from:360608270#1059#29#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#1088#22#0(6@0"360608270#0#0#0#0#0"0(4@37""_cvReleaseCapture", referenced from:360608270#1110#40#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#1150#22#0(6@0"360608270#0#0#0#0#0"0(4@30""_cvWaitKey", referenced from:360608270#1172#33#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#1205#22#0(6@0"360608270#0#0#0#0#0"0(4@30""_cvGetSize", referenced from:360608270#1227#33#0(6@0"360608270#0#0#0#0#0"0(13@45"GetThresholdedImage(_IplImage*)     in main.o360608270#1260#52#0(6@0"360608270#0#0#0#0#0"0(13@45"GetThresholdedImage(_IplImage*)     in main.o360608270#1312#52#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#1364#22#0(6@0"360608270#0#0#0#0#0"0(4@39""_cvGetSpatialMoment", referenced from:360608270#1386#42#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#1428#22#0(6@0"360608270#0#0#0#0#0"0(13@15"_main in main.o360608270#1450#22#0(6@0"360608270#0#0#0#0#0"0(13@19"Symbol(s) not found360608270#1472#24#0(6@0"360608270#0#0#0#0#0"0(13@35"Collect2: ld returned 1 exit status360608270#1496#36#0(6@0"360608270#0#0#0#0#0"0(0#0#0"32651569751457900#540"    cd /Users/arminvoit/Documents/OpenCV/Untitled    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug -F/Users/arminvoit/Documents/OpenCV/Untitled/build/Debug -filelist /Users/arminvoit/Documents/OpenCV/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/x86_64/Untitled.LinkFileList -mmacosx-version-min=10.6 -framework OpenCV -o /Users/arminvoit/Documents/OpenCV/Untitled/build/Debug/Untitled1#
+
+CLd /Users/arminvoit/Documents/Repository/Untitled/build/Debug/Untitled normal i386
+s362854001.929607
+e362854006.495131
+r1
+xLd
+x/Users/arminvoit/Documents/Repository/Untitled/build/Debug/Untitled
+xnormal
+xi386
+lSLF07#2@72"Link /Users/arminvoit/Documents/Repository/Untitled/build/Debug/Untitled362854001#362854006#0(0"0(0#0#0"32651569751457900#556"    cd /Users/arminvoit/Documents/Repository/Untitled    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/arminvoit/Documents/Repository/Untitled/build/Debug -F/Users/arminvoit/Documents/Repository/Untitled/build/Debug -filelist /Users/arminvoit/Documents/Repository/Untitled/build/Untitled.build/Debug/Untitled.build/Objects-normal/i386/Untitled.LinkFileList -mmacosx-version-min=10.6 -framework OpenCV -o /Users/arminvoit/Documents/Repository/Untitled/build/Debug/Untitled0#
+
