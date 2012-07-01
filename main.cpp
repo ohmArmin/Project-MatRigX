@@ -1,5 +1,7 @@
-#include "cv.h"
-#include "highgui.h"
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/imgproc/imgproc_c.h"
+#include "opencv2/imgproc/imgproc.hpp"
+
 #include "math.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -7,19 +9,19 @@
 
 
 // To filter for Yellow
-IplImage* GetThresholdedImageYellow(IplImage* img)
+cv::Mat* GetThresholdedImageYellow(cv::Mat* img)
 {
 	// Convert the image into an HSV image
-    IplImage* imgHSV = cvCreateImage(cvGetSize(img), 8, 3);
-    cvCvtColor(img, imgHSV, CV_BGR2HSV);
+	IplImage imgHSV = cvCreateImage(cvGetSize(img), 8, 3);
+	cvCvtColor(img, imgHSV, CV_BGR2HSV);
 
-IplImage* imgThreshed = cvCreateImage(cvGetSize(img), 8, 1);
+	cv::Mat imgThreshed = cvCreateImage(cvGetSize(img), 8, 1);
 
-cvInRangeS(imgHSV, cvScalar(20, 100, 150), cvScalar(30, 255, 255), imgThreshed);
+	cvInRangeS(imgHSV, cvScalar(20, 100, 150), cvScalar(30, 255, 255), imgThreshed);
 	
 	//erode and dilate imgTreshed
 	cvErode(imgThreshed , imgThreshed, NULL, 1);
-	cvDilate(imgThreshed, imgThreshed, NULL, 1);
+	cv::dilate(imgThreshed, imgThreshed, NULL,cv::Point anchor=Point(-1,-1), 1);
 
     cvReleaseImage(&imgHSV);
     return imgThreshed;
@@ -91,7 +93,7 @@ IplImage* GetThresholdedImageRed(IplImage* img)
 int main()
 {	
 	//Initialize Iteration counter (=number of images to be compared)
-	int counter = 3;
+	int counter = 4;
 	
 	// initialize images for thresholded images (Marker = white, rest = black)
 	IplImage* imgYellowThreshDes;
@@ -127,7 +129,7 @@ int main()
 	
 	//define Image array and load calibration images
 	
-	IplImage* images[7];
+	cv::Mat* images[7];
 	
 	for (int i=1; i<=counter; i++) {
 		
@@ -160,14 +162,14 @@ int main()
 	
 	
 	//Load destination Image and define srcimage
-	IplImage* desimage = cvLoadImage("./MarkerPics/des.jpg");
-	
+	//IplImage* desimage = cvLoadImage("MarkerPics/des.jpg");
+	cv::Mat desimage = cv::imread("MarkerPics/des.jpg", 1);
 	IplImage* srcimage;
 	
 			
 	
     // Couldn't get a image? Throw an error and quit
-    if(!desimage)
+    if(!desimage.data)
     {
         printf("Could not initialize desimage...\n");
         return -1;
