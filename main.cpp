@@ -1,7 +1,5 @@
-#include "opencv2/highgui/highgui.hpp"
-#include "opencv2/imgproc/imgproc_c.h"
-#include "opencv2/imgproc/imgproc.hpp"
-
+#include "cv.h"
+#include "highgui.h"
 #include "math.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -9,19 +7,19 @@
 
 
 // To filter for Yellow
-cv::Mat* GetThresholdedImageYellow(cv::Mat* img)
+IplImage* GetThresholdedImageYellow(IplImage* img)
 {
 	// Convert the image into an HSV image
-	IplImage imgHSV = cvCreateImage(cvGetSize(img), 8, 3);
-	cvCvtColor(img, imgHSV, CV_BGR2HSV);
+    IplImage* imgHSV = cvCreateImage(cvGetSize(img), 8, 3);
+    cvCvtColor(img, imgHSV, CV_BGR2HSV);
 
-	cv::Mat imgThreshed = cvCreateImage(cvGetSize(img), 8, 1);
+IplImage* imgThreshed = cvCreateImage(cvGetSize(img), 8, 1);
 
-	cvInRangeS(imgHSV, cvScalar(20, 100, 150), cvScalar(30, 255, 255), imgThreshed);
+cvInRangeS(imgHSV, cvScalar(20, 80, 80), cvScalar(30, 255, 255), imgThreshed);
 	
 	//erode and dilate imgTreshed
 	cvErode(imgThreshed , imgThreshed, NULL, 1);
-	cv::dilate(imgThreshed, imgThreshed, NULL,cv::Point anchor=Point(-1,-1), 1);
+	cvDilate(imgThreshed, imgThreshed, NULL, 1);
 
     cvReleaseImage(&imgHSV);
     return imgThreshed;
@@ -80,7 +78,7 @@ IplImage* GetThresholdedImageRed(IplImage* img)
 	
 	IplImage* imgThreshed = cvCreateImage(cvGetSize(img), 8, 1);
 	
-	cvInRangeS(imgHSV, cvScalar(160, 170, 110), cvScalar(185, 255, 255), imgThreshed);
+	cvInRangeS(imgHSV, cvScalar(160, 140, 110), cvScalar(185, 255, 255), imgThreshed);
 	
 	//erode and dilate imgTreshed
 	cvErode(imgThreshed , imgThreshed, NULL, 1);
@@ -93,7 +91,7 @@ IplImage* GetThresholdedImageRed(IplImage* img)
 int main()
 {	
 	//Initialize Iteration counter (=number of images to be compared)
-	int counter = 4;
+	int counter = 2;
 	
 	// initialize images for thresholded images (Marker = white, rest = black)
 	IplImage* imgYellowThreshDes;
@@ -128,30 +126,27 @@ int main()
 	momentsgreensrc = (CvMoments*)malloc(sizeof(CvMoments));
 	
 	//define Image array and load calibration images
-	
-	cv::Mat* images[7];
+	IplImage* images[10];
 	
 	for (int i=1; i<=counter; i++) {
 		
 		char buffer[33];
 		sprintf(buffer, "./MarkerPics/src%d.jpg", i);
 		images[i] = cvLoadImage(buffer);
-		//images[i] = cvLoadImage("./MarkerPics/src2.jpg");
+		
 	}
 	
 	
 	
 	
 	//define map_Matrices to fill with Transform Matrix
-	CvMat* map_matrix1[7];
+	CvMat* map_matrix1[10];
 	
 	for (int i=1; i<=counter; i++) {
 		
 		map_matrix1[i] = cvCreateMat(3,3, CV_32FC1);
 	}
 	
-
-	//map_matrix = cvCreateMat(2, 3, CV_32FC1);
 	
 	
 	
@@ -162,14 +157,14 @@ int main()
 	
 	
 	//Load destination Image and define srcimage
-	//IplImage* desimage = cvLoadImage("MarkerPics/des.jpg");
-	cv::Mat desimage = cv::imread("MarkerPics/des.jpg", 1);
+	IplImage* desimage = cvLoadImage("./MarkerPics/des.jpg");
+	
 	IplImage* srcimage;
 	
 			
 	
     // Couldn't get a image? Throw an error and quit
-    if(!desimage.data)
+    if(!desimage)
     {
         printf("Could not initialize desimage...\n");
         return -1;
@@ -180,11 +175,11 @@ int main()
 	for (int i =1; i<=counter; i++) {
 
 		// The two windows we'll be using
-		/*cvNamedWindow("Image");
+		cvNamedWindow("Image");
 		cvNamedWindow("yellowMarker");
 		cvNamedWindow("blueMarker");
 		cvNamedWindow("redMarker");
-		cvNamedWindow("greenMarker");*/
+		cvNamedWindow("greenMarker");
 		
 		//Load Images for mapping
 		srcimage = images[i];
@@ -208,7 +203,6 @@ int main()
 		imgGreenThreshSrc = GetThresholdedImageGreen(srcimage); 
 
 		// Calculate the moments to estimate the position of the markers
-	
         cvMoments(imgYellowThreshDes, momentsyellowdes, 1);
 		cvMoments(imgBlueThreshDes, momentsbluedes, 1);
 		cvMoments(imgRedThreshDes, momentsreddes, 1);
@@ -252,7 +246,7 @@ int main()
 		double moment01greensrc = cvGetSpatialMoment(momentsgreensrc, 0, 1);
 		double areagreensrc = cvGetCentralMoment(momentsgreensrc, 0, 0);
 
-        // Holding the last and current marker positions and placing them into a Point Vector
+        // Holding the des and src marker position and loading them into CvPoints for Matrix calculation
 		float posXyellowDes = 0;
 		float posYyellowDes = 0;
 	
@@ -322,7 +316,7 @@ int main()
 	
 	
 	
-		// generate map_Matrix
+		// generate map_Matrix (Either Affine or Perspective)
 		cvGetPerspectiveTransform(srcPoints, desPoints, map_matrix1[i]);
 		//cvGetAffineTransform(srcPoints, desPoints, map_matrix);
 	
@@ -340,21 +334,28 @@ int main()
 		printf("Iteration: %d\n",i);
 
 	
-		//Map source to destination pic
+		//Map source to destination pic (either affine or perspective)
 		//cvWarpAffine(srcimage, desimage, map_matrix, CV_INTER_LINEAR + CV_WARP_FILL_OUTLIERS);
 		//cvWarpPerspective(srcimage, desimage, map_matrix, CV_INTER_LINEAR + CV_WARP_FILL_OUTLIERS);
 		
 
 		//View Image and Threshs
-        /*cvShowImage("yellowMarker", imgYellowThreshDes);
-		cvShowImage("blueMarker", imgBlueThreshDes);
-		cvShowImage("redMarker", imgRedThreshDes);
-		cvShowImage("greenMarker", imgGreenThreshDes);
-		cvShowImage("Image", desimage);*/
+        cvShowImage("yellowMarker", imgYellowThreshSrc);
+		cvShowImage("blueMarker", imgBlueThreshSrc);
+		cvShowImage("redMarker", imgRedThreshSrc);
+		cvShowImage("greenMarker", imgGreenThreshSrc);
+		cvShowImage("Image", srcimage);
+		
+		// press escape to start next iteration
+		while( 1 ) {
+			if( cvWaitKey( 100 ) == 27 ) break;
+		}
+		
+		
 	}
 	
 	
-	// Wait for a keypress to exit application
+	// press escape to exit application
 	while( 1 ) {
 		if( cvWaitKey( 100 ) == 27 ) break;
 	}	// Wait for a keypress to exit application
@@ -362,30 +363,30 @@ int main()
 	
 	
 	
-		// Release the thresholded image+moments to prevent memory leaks
-		cvReleaseImage(&imgYellowThreshDes);
-		cvReleaseImage(&imgBlueThreshDes);
-		cvReleaseImage(&imgRedThreshDes);
-		cvReleaseImage(&imgGreenThreshDes);
-		cvReleaseImage(&imgYellowThreshSrc);
-		cvReleaseImage(&imgBlueThreshSrc);
-		cvReleaseImage(&imgRedThreshSrc);
-		cvReleaseImage(&imgGreenThreshSrc);
+	// Release the thresholded image+moments to prevent memory leaks
+	cvReleaseImage(&imgYellowThreshDes);
+	cvReleaseImage(&imgBlueThreshDes);
+	cvReleaseImage(&imgRedThreshDes);
+	cvReleaseImage(&imgGreenThreshDes);
+	cvReleaseImage(&imgYellowThreshSrc);
+	cvReleaseImage(&imgBlueThreshSrc);
+	cvReleaseImage(&imgRedThreshSrc);
+	cvReleaseImage(&imgGreenThreshSrc);
 	
-		/*cvDestroyWindow( "yellowMarker" ); 
-		cvDestroyWindow( "blueMarker" ); 
-		cvDestroyWindow( "redMarker" ); 
-		cvDestroyWindow( "greenMarker" ); 
-		cvDestroyWindow( "Image" ); */
+	cvDestroyWindow( "yellowMarker" ); 
+	cvDestroyWindow( "blueMarker" ); 
+	cvDestroyWindow( "redMarker" ); 
+	cvDestroyWindow( "greenMarker" ); 
+	cvDestroyWindow( "Image" ); 
 	
-		delete momentsyellowdes;
-		delete momentsbluedes;
-		delete momentsreddes;
-		delete momentsgreendes;
-		delete momentsyellowsrc;
-		delete momentsbluesrc;
-		delete momentsredsrc;
-		delete momentsgreensrc;
+	delete momentsyellowdes;
+	delete momentsbluedes;
+	delete momentsreddes;
+	delete momentsgreendes;
+	delete momentsyellowsrc;
+	delete momentsbluesrc;
+	delete momentsredsrc;
+	delete momentsgreensrc;
 	
 		
 		
